@@ -1,0 +1,20 @@
+<!--<h2>Pet profile</h2>-->
+<!--<h3>Pet name: {{pet.name}}</h3>-->
+<!--<img [src]="pet.image" style="max-width: 100%">-->
+<h2>Pet profile</h2>
+<label>
+  Pet name:
+  <input type="text" [(ngModel)]="pet.name">
+<!--  // ngmodel là 1 directive, nó sẽ lấy giá trị của input và gán cho pet.name-->
+<!--  // nếu input thay đổi, pet.name cũng thay đổi-->
+<!--  // nếu pet.name thay đổi, input cũng thay đổi-->
+<!--  // 2 cách thay đổi này sẽ đồng bộ-->
+</label>
+<br >
+<label>
+  Pet image:
+  <input type="url" [(ngModel)]="pet.image">
+</label>
+<br >
+<h3>Pet name: {{pet.name}}</h3>
+<img [src]="pet.image" style="max-width: 100%">
